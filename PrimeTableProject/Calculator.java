@@ -49,6 +49,12 @@ public class Calculator
        {
            setOfPrimes[counter] = nthPrime(counter+1);
        }
+       
+       System.out.print("/t");
+       for (int counter = 0; counter < intInput; counter++)
+       {
+           System.out.print(setOfPrimes[counter] + "/t");
+        }
     }
     
     public static int nthPrime(int n) {
