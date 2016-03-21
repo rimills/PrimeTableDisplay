@@ -50,10 +50,20 @@ public class Calculator
            setOfPrimes[counter] = nthPrime(counter+1);
        }
        
-       System.out.print("/t");
+       System.out.printf("%1$10s", "|");
        for (int counter = 0; counter < intInput; counter++)
        {
-           System.out.print(setOfPrimes[counter] + "/t");
+           System.out.printf("%1$10s", setOfPrimes[counter] + "|");
+       }
+       System.out.print("\n");
+       for (int outerCounter = 0; outerCounter < intInput; outerCounter++)
+       {
+           System.out.printf("%1$10s", setOfPrimes[outerCounter] + "|");
+           for (int innerCounter = 0; innerCounter < intInput; innerCounter++)
+           {
+               System.out.printf("%1$10s",setOfPrimes[outerCounter] * setOfPrimes[innerCounter] + "|");
+           }
+           System.out.print("\n");
         }
     }
     
