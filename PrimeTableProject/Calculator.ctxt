@@ -2,8 +2,8 @@
 comment0.params=
 comment0.target=Calculator()
 comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Calculator\r\n
-comment1.params=
-comment1.target=void\ main()
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
 comment2.params=n
 comment2.target=int\ nthPrime(int)
 comment3.params=n
